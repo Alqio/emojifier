@@ -32,3 +32,8 @@ video {
 img {
     padding: 5px;
 }
+#expressions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
