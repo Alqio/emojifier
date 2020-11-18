@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Emojifier</title>
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div>
+        
+        <div id="head">
+            <h1>Emojifier</h1>
+            <p>Enable video camera to start</p>
+        </div>
+
+        <span>
+            <video id="video" width="720" height="560" autoplay muted></video>
+        </span>
+
+        <span id="emoji__canvas">
+            
+        </span>
+        
+        <br/>
+        
+        <div id="emojis">
+            <img id="angry" src="angry.png">
+            <img id="disgusted" src="disgusted.png">
+            <img id="fearful" src="fearful.png">
+            <img id="happy" src="happy.png">
+            <img id="neutral" src="neutral.png">
+            <img id="sad" src="sad.png">
+            <img id="surprised" src="surprised.png">
+
+        </div>
+
+        <div id="info">
+            <p>This project was created for the course Art and Artificial Intelligence in Aalto University fall 2020.</p>
+            <p>It utilizes <a href="https://github.com/justadudewhohacks/face-api.js/">face-api.js</a> to detect face and expressions from live video, and then draws corresponding emojis over the detected faces.</p>
+            <p>Code inspired from <a href="https://github.com/WebDevSimplified/Face-Detection-JavaScript">https://github.com/WebDevSimplified/Face-Detection-JavaScript</a></p>
+            <p>Source available on GitHub</p>
+            <br/>
+            <p>Some food for thought and expirements:</p>
+
+            <ul>
+                <li>What happens when there are multiple faces in the video?</li>
+                <li>Can you use a picture of face? Try a print or an image from your mobile phone.</li>
+                <li>How about a face mask?</li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+</html>
